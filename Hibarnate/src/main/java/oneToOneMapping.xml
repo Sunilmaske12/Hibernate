@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/hibernate_work</property>
+		<property name="connection.username">root</property>
+		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hbm2ddl.auto">update</property>
+		<!-- create: drop the last table and create new
+		     update: add new record in same table -->
+		<property name="show_sql">true</property>
+		<mapping class="oneToManyMapping.Questions"/>
+		<mapping class="oneToManyMapping.Answers"/>
+	</session-factory>
+</hibernate-configuration>
