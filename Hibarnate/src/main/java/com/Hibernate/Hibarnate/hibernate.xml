@@ -12,10 +12,10 @@
 		<!-- create: drop the last table and create new
 		     update: add new record in same table -->
 		<property name="show_sql">true</property>
-		<property name="formate_sql">true</property>
-		<mapping class="firstProgramSave.Student"/>
-		<mapping class="firstProgramSave.Address"/>
-		<mapping class="manyToManyMapping.Employee"/>
-		<mapping class="manyToManyMapping.Project"/>
+		<property name="format_sql">true</property>
+		<mapping class="com.Hibernate.Hibarnate.Student"/>
+		<mapping class="com.Hibernate.Hibarnate.Address"/>
+		<mapping class="manyToManyMapping.Employee" />
+		<mapping class="manyToManyMapping.Project" />
 	</session-factory>
 </hibernate-configuration>
