@@ -13,12 +13,7 @@
 		     update: add new record in same table -->
 		<property name="show_sql">true</property>
 		<property name="formate_sql">true</property>
-		<mapping class="firstProgramSave.Student"/>
-		<mapping class="firstProgramSave.Address"/>
-		<mapping class="manyToManyMapping.Employee"/>
-		<mapping class="manyToManyMapping.Project"/>
-		<mapping class="com.pegination.Customer"/>
-	    <mapping class="com.cascading.CascStudent"/>
-	<mapping class="com.cascading.CascProject"/>
+		
+	<mapping resource="com/XMLMapping/config.xml"/>
 	</session-factory>
 </hibernate-configuration>
